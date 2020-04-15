@@ -7,11 +7,10 @@ const MovieList = () => {
 	return (
 		<div>
 			{movies.map((movie) => (
-				<li>
+				<li key={movie.id}>
 					<Movie
 						name={movie.name}
 						price={movie.price}
-						key={movie.id}
 					/>
 				</li>
 			))}
